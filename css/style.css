@@ -1,0 +1,421 @@
+.works__btn, .intro__btn {
+  width: 217px;
+  height: 56px;
+  background: #66d2cf;
+  border-radius: 6px;
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #fefcf7;
+  border: none;
+  transition: all 0.3s linear;
+}
+.works__btn:hover, .intro__btn:hover {
+  background: #3cb2ae;
+}
+.works__btn:active, .intro__btn:active {
+  background: #a0efec;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar__logo {
+  width: 236px;
+}
+.navbar__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 33px;
+}
+.navbar__link {
+  /* HOME */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height, or 125% */
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+  color: #83888f;
+}
+.navbar__link:hover {
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  color: #333d4b;
+}
+.navbar__burger {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.navbar__hr {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  border-radius: 15px;
+  border: none;
+}
+
+@media only screen and (max-width: 450px) {
+  .navbar__list {
+    display: none;
+  }
+  .navbar__burger {
+    display: flex;
+  }
+  .navbar__logo {
+    width: 163px;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.container {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.intro {
+  margin-top: 50px;
+  background-image: url(../img/Bitmap.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 105px;
+}
+.intro__title {
+  /* Great coffee made si */
+  width: 500px;
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  /* or 100% */
+  color: #fefcf7;
+}
+.intro__text {
+  /* Start your mornings */
+  width: 450px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  color: #fefcf7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+.intro__btn {
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 450px) {
+  .intro {
+    padding: 60px 50px;
+    background-position: center;
+    border-radius: 20px;
+  }
+  .intro__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .intro__title {
+    width: 280px;
+    /* Great coffee made si */
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fefcf7;
+  }
+  .intro__text {
+    /* Start your mornings */
+    width: 280px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+    text-align: center;
+  }
+}
+.collection {
+  background-image: url(../img/collect.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.collection__card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 200px;
+}
+.collection__title {
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  text-align: center;
+  color: #333d4b;
+}
+.collection__text {
+  width: 255px;
+  /* Light and flavorful */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  text-align: center;
+  color: #333d4b;
+}
+
+@media only screen and (max-width: 450px) {
+  .collection {
+    margin-top: 100px;
+    flex-direction: column;
+    gap: 0;
+  }
+  .collection__card {
+    margin-top: 100px;
+  }
+}
+.choose {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+  padding: 100px 0;
+  width: 100%;
+  height: 577px;
+  background: #2c343e;
+  border-radius: 10px;
+}
+.choose__title {
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  /* identical to box height, or 120% */
+  text-align: center;
+  color: #fefcf7;
+}
+.choose__text {
+  width: 550px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  text-align: center;
+  color: #fefcf7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  margin: 50px 0;
+}
+.choose__cards {
+  position: absolute;
+  top: 400px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.choose__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  /* Group 10 Copy 2 */
+  width: 350px;
+  height: 382px;
+  background-color: #0e8784;
+  border-radius: 10px;
+}
+.choose__subtitle {
+  /* Best quality */
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  text-align: center;
+  color: #fefcf7;
+}
+.choose__subtext {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  text-align: center;
+  color: #fefcf7;
+}
+
+@media only screen and (max-width: 450px) {
+  .choose {
+    height: 900px;
+    padding: 20px 0;
+    justify-content: start;
+  }
+  .choose__cards {
+    flex-direction: column;
+    top: 300px;
+  }
+  .choose__card {
+    width: 300px;
+  }
+  .choose__title {
+    /* Why choose us? */
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 28px;
+    /* identical to box height, or 100% */
+    text-align: center;
+    color: #fefcf7;
+  }
+  .choose__text {
+    width: 90%;
+  }
+}
+.works {
+  margin-top: 500px;
+}
+.works__maintitle {
+  /* How it works */
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  color: #83888f;
+}
+.works__sircle {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+.works__box {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #0E8784;
+}
+.works__hr {
+  width: 600px;
+  border: 2px solid #FDD6BA;
+}
+.works__cards {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  gap: 380px;
+}
+.works__title {
+  /* 01 */
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  /* identical to box height, or 100% */
+  color: #fdd6ba;
+}
+.works__subtitle {
+  /* Pick your coffee */
+  width: 250px;
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  /* or 112% */
+  color: #333d4b;
+}
+.works__text {
+  /* Select from our evol */
+  margin-top: 30px;
+  width: 285px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  color: #333d4b;
+}
+.works__btn {
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 450px) {
+  .works {
+    margin-top: 800px;
+  }
+  .works__sircle {
+    display: none;
+  }
+  .works__maintitle {
+    text-align: center;
+  }
+  .works__cards {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .works__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .works__text, .works__title, .works__subtitle {
+    text-align: center;
+  }
+  .works__btn {
+    margin-top: 50px;
+    margin-left: 80px;
+  }
+}/*# sourceMappingURL=style.css.map */
