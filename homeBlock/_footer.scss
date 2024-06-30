@@ -1,64 +1,72 @@
-// .footer {
-//   padding: 50px 150px;
-//   margin-top: 100px;
-//   @include Display;
-//   background-color: #2C343E;
+/** @format */
 
-//   &__logo {
-//     width: 236px;
-//   }
-//   &__list {
-//     @include Display;
+.footer {
+  padding: 50px 150px;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2c343e;
 
-//     gap: 50px;
-//   }
-//   &__link {
-//     /* HOME */
+  &__logo {
+    width: 236px;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-//     font-family: "Barlow";
-//     font-style: normal;
-//     font-weight: 700;
-//     font-size: 12px;
-//     line-height: 15px;
-//     /* identical to box height, or 125% */
-//     letter-spacing: 0.923077px;
-//     text-transform: uppercase;
-//     transition: all 0.3s ease;
-//     color: #83888f;
-//     &:hover {
-//       color: white;
-//     }
-//   }
-//   &__media {
-//     @include Display;
+    gap: 50px;
+  }
+  &__link {
+    /* HOME */
 
-//     gap: 30px;
-//   }
-// }
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height, or 125% */
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    color: #83888f;
+    &:hover {
+      color: white;
+    }
+  }
+  &__media {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-// path {
-//   fill: #fefcf7;
-//   transition: all 0.3s ease-in-out;
-// }
-// path:hover {
-//   fill: #fdd6ba;
-// }
+    gap: 30px;
+  }
+}
 
-// @media only screen and (max-width: 450px) {
-//   .footer {
-//     flex-direction: column;
-//     gap: 50px;
-//     &__logo {
-//       width: 220px;
-//     }
-//     &__list {
-//       flex-direction: column;
-//       width: 200px;
-//       gap: 20px;
-//     }
+path {
+  fill: #fefcf7;
+  transition: all 0.3s ease-in-out;
+}
+path:hover {
+  fill: #fdd6ba;
+}
 
-//     &__link {
-//       text-align: center !important;
-//     }
-//   }
-// }
+@media only screen and (max-width: 450px) {
+  .footer {
+    flex-direction: column;
+    gap: 50px;
+    &__logo {
+      width: 220px;
+    }
+    &__list {
+      flex-direction: column;
+      width: 200px;
+      gap: 20px;
+    }
+
+    &__link {
+      text-align: center !important;
+    }
+  }
+}
